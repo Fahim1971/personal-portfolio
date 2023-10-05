@@ -3,6 +3,8 @@ import {ImPriceTag} from 'react-icons/im';
 import {BsFillChatDotsFill} from 'react-icons/bs';
 import { ProgressBar } from "react-bootstrap";
 import {FaDesktop} from 'react-icons/fa';
+import SliderComp from "./components/Projects/Slider";
+import SliderCertificates from "./certificates/SliderCertificates";
 function App() {
   return (
     <>
@@ -304,80 +306,7 @@ function App() {
                 </div>
             </div>
             <div className="container">
-                <div className="portfolio-content lightbox-gallery">
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="portfolio-info">
-                                <h5>Our Photography</h5>
-                                <span>Design</span>
-                            </div>
-                            <a className="link-overlay" href="#"></a>
-                        </div>
-                    </div> 
-                </div> 
+                <SliderComp></SliderComp>
             </div>
         </section>
        
@@ -386,83 +315,7 @@ function App() {
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className="section-title">
-                            <h3 className="dark-color text-uppercase">Testimonials</h3>
-                            <p className="text-uppercase small">A Lead UX &amp; UI designer based in bd</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="owl-carousel" data-items="2" data-nav-dots="true" data-md-items="2" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="30">
-                   
-                    <div className="testimonial-col-01">
-                        <div className="media">
-                            <div className="img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="media-div p-25px-l">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <div className="tc-info">
-                                    <h6 className="font-alt dark-color font-w-600">Nancy Bayers</h6>
-                                    <span>Co-founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 
-                    <div className="testimonial-col-01">
-                        <div className="media">
-                            <div className="img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="media-div p-25px-l">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <div className="tc-info">
-                                    <h6 className="font-alt dark-color font-w-600">Nancy Bayers</h6>
-                                    <span>Co-founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 
-                    <div className="testimonial-col-01">
-                        <div className="media">
-                            <div className="img">
-                                <img src="./img/work1.jpeg" title="" alt=""/>
-                            </div>
-                            <div className="media-div p-25px-l">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <div className="tc-info">
-                                    <h6 className="font-alt dark-color font-w-600">Nancy Bayers</h6>
-                                    <span>Co-founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div className="testimonial-col-01">
-                        <div className="media">
-                            <div className="img">
-                                <img src="./img/team-4.jpg" title="" alt=""/>
-                            </div>
-                            <div className="media-div p-25px-l">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <div className="tc-info">
-                                    <h6 className="font-alt dark-color font-w-600">Nancy Bayers</h6>
-                                    <span>Co-founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" className="section white-bg">
-            <div className="container">
-                <div className="row sm-m-25px-b m-35px-b">
-                    <div className="col-md-12">
-                        <div className="section-title">
-                            <h3 className="dark-color text-uppercase">Latest Blogs</h3>
+                            <h3 className="dark-color text-uppercase">Achivements</h3>
                             <p className="text-uppercase small">A Lead UX &amp; UI designer based in Canada</p>
                         </div>
                     </div>
@@ -472,7 +325,7 @@ function App() {
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/blog-1.jpg" title="" alt=""/>
+                                    <img src="./img/certificate.jpg" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
@@ -492,7 +345,7 @@ function App() {
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/blog-2.jpg" title="" alt=""/>
+                                    <img src="./img/certificate.jpg" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
@@ -512,7 +365,7 @@ function App() {
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/blog-3.jpg" title="" alt=""/>
+                                    <img src="./img/certificate.jpg" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
@@ -531,7 +384,7 @@ function App() {
                 </div>
             </div>
         </section>
-       
+        
         <section id="contactus" className="section gray-bg">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
