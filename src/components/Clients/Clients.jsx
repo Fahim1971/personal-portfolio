@@ -73,10 +73,7 @@ const Clients = () => {
     ))
   return (
     <Container id='client'>
-        <Slide direction="left">
-            <span className="green">testimonials</span>
-            <h1>what people say</h1>
-        </Slide>
+            <h1 className='black'>Testimonials</h1>
         <Testimonials>
             <Slider ref={arrowRef} {...settings}>
                 {clientDisc}
@@ -100,7 +97,6 @@ const Container = styled.div`
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 4rem 0;
 
     @media(max-width:840px){
         width: 90%;
@@ -112,8 +108,7 @@ const Container = styled.div`
     }
 
     h1{
-        padding-top: 1rem;
-        text-transform: capitalize;
+        text-transform: uppercase;
     }
 
     .slick-list, .slick-slider, .slick-track{

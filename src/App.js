@@ -5,6 +5,7 @@ import { ProgressBar } from "react-bootstrap";
 import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
 import SliderCertificates from "./certificates/SliderCertificates";
+import Clients from "./components/Clients/Clients";
 function App() {
   return (
     <>
@@ -346,6 +347,10 @@ My services include meticulous project planning, resource allocation, risk manag
                 </div>
             </div>
         </section>
+
+        <section className="section">
+                    <Clients></Clients>
+        </section>
         
         <section id="contactus" className="section gray-bg">
             <div className="container">
@@ -358,8 +363,6 @@ My services include meticulous project planning, resource allocation, risk manag
                     </div>
                 </div>
                 </div>
-            
-              
                 <div className="row justify-content-center">
                     <div className="col-lg-8 m-15px-tb">
                         <div className="contact-form box-shadow">
