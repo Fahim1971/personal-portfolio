@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {ImPriceTag} from 'react-icons/im';
 import {BsFillChatDotsFill} from 'react-icons/bs';
 import { ProgressBar } from "react-bootstrap";
-import {FaDesktop} from 'react-icons/fa';
+import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
 import SliderCertificates from "./certificates/SliderCertificates";
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
     <div data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">
     <header>
-        <nav className="navbar header-nav header-white navbar-expand-lg">
+        <nav className="navbar header-nav header-white navbar-expand-lg bg-dark bg-opacity-10">
             <div className="container">
               
                 <a className="navbar-brand" href="index-2.html">Shahariar Rashid fahim <span className="theme-bg"></span></a>
@@ -37,7 +37,7 @@ function App() {
   
     <main>
        
-        <section id="home" className="home-banner-02 bg-cover bg-center bg-no-repeat" style = {{backgroundImage: 'url(./img/banner.png)'}} >
+        <section id="home" className="home-banner-02 img-fluid bg-cover bg-left-bottom bg-no-repeat custom_bg" style = {{backgroundImage: 'url(./img/banner.png)'}} >
             <div className="container">
                 <div className="row full-screen align-items-center p-100px-tb">
                     <div className="col-12">
@@ -70,20 +70,26 @@ function App() {
                         <div className="about-me-img box-shadow">
                             <img src="./img/banner2.png" title="" alt=""/>
                             <div className="nav social-icon">
-                                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
-                                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/shahariarrashidfahim/"><i className="fab fa-linkedin-in"></i></a>
+    
+                                <a href="https://www.salesforce.com/trailblazer/shahariarrashid71"><i className="fab fa-salesforce"></i></a>
+                                <a href="https://www.facebook.com/s.fahim71/"><i className="fab fa-facebook-f"></i></a>
+                                <a href="https://github.com/Fahim1971"><i className="fab fa-git"></i></a>
+                               
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-7 m-15px-tb">
-                        <div className="about-me">
+                    <div className="col-lg-7 m-15px-tb justify_content">
+                        <div className="about-me ">
                             <h4>I'M Shahariar Rashid Fahim</h4>
                             <h6>A Professional <span className="theme-color">Salesforce admin & project manager</span> based in <span className="theme-color">Bangladesh</span></h6>
                             <p>Welcome to my domain of Salesforce excellence! I'm Shahariar Rashid Fahim, a seasoned Salesforce admin and adept project manager. With a passion for precision and a track record of successful CRM implementations, I'm here to propel your business to new heights. Explore how I can optimize your Salesforce journey today!</p>
                             <div className="row about-list">
                                 <div className="col-md-6">
+                                    <div className="media">
+                                        <label>Education</label>
+                                        <p>Bachelor of Science in Computer Science and engineering, North South University.</p>
+                                    </div>
                                     <div className="media">
                                         <label>Email</label>
                                         <p>Shahariarrashidfahim@gmail.com</p>
@@ -115,93 +121,67 @@ function App() {
     
         <section className="section">
             <div className="container">
-                <div className="row sm-m-25px-b m-35px-b">
+                <div className="row sm-m-25px-b m-35px-b justify_content">
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">My Skills</h3>
-                            <p className="text-uppercase small">A Lead UX &amp; UI designer based in Canada</p>
+                            <p className="text-uppercase small">A passionate Salesforce administrator and project manager</p>
                         </div>
                     </div>
                 </div>
                 <div className="row justify-content-between">
                     <div className="col-lg-6 m-15px-tb">
                         <div className="skill-lt">
-                            <h6 className="dark-color">HTML5</h6>
-                            <ProgressBar now={90} bar className="progressbar" variant="bg-progressbar" animated={true} label="90%"></ProgressBar>
-                            {/* <div className="skill-bar">
-                                <div className="skill-bar-in theme-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                                    <span>92%</span>
-                                </div>
-                            </div> */}
+                            <h6 className="dark-color">Salesforce</h6>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                        
                         </div>
                         <div className="skill-lt">
-                            <h6 className="dark-color">WordPress</h6>
-                            <ProgressBar now={90} bar className="progressbar" variant="bg-progressbar" animated={true} label="90%"></ProgressBar>
-                            {/* <div className="skill-bar">
-                                <div className="skill-bar-in theme-bg" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                                    <span>75%</span>
-                                </div>
-                            </div> */}
+                            <h6 className="dark-color">Project Management</h6>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                        
                         </div>
                         <div className="skill-lt">
-                            <h6 className="dark-color">Magento</h6>
-                            <ProgressBar now={90} bar className="progressbar" variant="bg-progressbar" animated={true} label="90%"></ProgressBar>
-                            {/* <div className="skill-bar">
-                                <div className="skill-bar-in theme-bg" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
-                                    <span>86%</span>
-                                </div>
-                            </div> */}
+                            <h6 className="dark-color">HTML,CSS,JS and Bootstrap</h6>
+                            <ProgressBar now={70} bar className="progressbar" variant="bg-progressbar" animated={true} label="70%"></ProgressBar>
+                          
                         </div>
                         <div className="skill-lt">
                             <h6 className="dark-color">UI/UX</h6>
-                            <ProgressBar now={90} bar className="progressbar" variant="bg-progressbar" animated={true} label="90%"></ProgressBar>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                        </div>
+                        <div className="skill-lt">
+                            <h6 className="dark-color">Python and Django</h6>
+                            <ProgressBar now={70} bar className="progressbar" variant="bg-progressbar" animated={true} label="70%"></ProgressBar>
                         </div>
                       
                     </div>
-                    <div className="col-lg-5 m-15px-tb">
-                        <div className="row">
-                            <div className="col-6 m-15px-tb">
-                                <div className="feature-box-2 media align-items-center">
-                                    <div className="icon">
-                                        <i className="fas fa-compact-disc"></i>
-                                    </div>
-                                    <div className="media-div">
-                                        <h5>80 Albumes Listened</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-6 m-15px-tb">
-                                <div className="feature-box-2 media align-items-center">
-                                    <div className="icon">
-                                        <i className="fas fa-trophy"></i>
-                                    </div>
-                                    <div className="media-div">
-                                        <h5>15 Awards Won</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-6 m-15px-tb">
-                                <div className="feature-box-2 media align-items-center">
-                                    <div className="icon">
-                                        <i className="fas fa-mug-hot"></i>
-                                    </div>
-                                    <div className="media-div">
-                                        <h5>1 000 Cups of coffee</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-6 m-15px-tb">
-                                <div className="feature-box-2 media align-items-center">
-                                    <div className="icon">
-                                        <i className="fas fa-flag"></i>
-                                    </div>
-                                    <div className="media-div">
-                                        <h5>10 Countries Visited</h5>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="col-lg-6 m-15px-tb">
+                        <div className="skill-lt">
+                            <h6 className="dark-color">SQL</h6>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                          
                         </div>
+                        <div className="skill-lt">
+                            <h6 className="dark-color">Jira,Trello</h6>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                
+                        </div>
+                        <div className="skill-lt">
+                            <h6 className="dark-color">Git</h6>
+                            <ProgressBar now={60} bar className="progressbar" variant="bg-progressbar" animated={true} label="60%"></ProgressBar>
+                        </div>
+                        <div className="skill-lt">
+                            <h6 className="dark-color">Microsoft Office</h6>
+                            <ProgressBar now={80} bar className="progressbar" variant="bg-progressbar" animated={true} label="80%"></ProgressBar>
+                        </div>
+                        <div className="skill-lt">
+                            <h6 className="dark-color">Postman</h6>
+                            <ProgressBar now={60} bar className="progressbar" variant="bg-progressbar" animated={true} label="60%"></ProgressBar>
+                        </div>
+                      
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -212,7 +192,7 @@ function App() {
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">My Services</h3>
-                            <p className="text-uppercase small">A Lead UX & UI designer based in Canada</p>
+                            <p className="text-uppercase small">A passionate Salesforce administrator and project manager</p>
                         </div>
                     </div>
                 </div>
@@ -221,11 +201,11 @@ function App() {
                     <div className="col-sm-6 col-lg-4 m-15px-tb">
                         <div className="feature-box-1 box-shadow-lg">
                             <div className="icon">
-                                <FaDesktop></FaDesktop>
+                                <FaSalesforce></FaSalesforce>
                             </div>
-                            <div className="feature-content">
-                                <h5>Unique design</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                            <div className="feature-content justify_content">
+                                <h5>Salesforce Administration</h5>
+                                <p>As a dedicated Salesforce Administrator, I specialize in providing expert services tailored to your organization's unique needs. With years of experience and in-depth knowledge of the Salesforce platform, I offer comprehensive support in configuring, customizing, and optimizing your Salesforce instance. From setting up automation workflows to managing user access and data integrity, I ensure that your Salesforce system operates efficiently and aligns perfectly with your business objectives. Trust me to empower your team with the tools they need to maximize productivity, gain valuable insights, and drive growth through Salesforce. Let's elevate your CRM experience together i am excited to work with you.</p>
                             </div>
                         </div>
                     </div>
@@ -233,11 +213,13 @@ function App() {
                     <div className="col-sm-6 col-lg-4 m-15px-tb">
                         <div className="feature-box-1 box-shadow-lg">
                             <div className="icon">
-                                <ImPriceTag></ImPriceTag>
+                                <FaDesktop></FaDesktop>
                             </div>
-                            <div className="feature-content">
-                                <h5>Different Layout</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                            <div className="feature-content justify_content">
+                                <h5>Web Development</h5>
+                                <p>As a skilled web developer, I'm here to transform your digital vision into a reality. I specialize in crafting responsive, user-friendly websites that not only look stunning but also perform seamlessly across devices. From elegant design to robust functionality, I have the expertise to create web solutions that meet your unique needs and objectives.
+
+Whether you're looking to establish a captivating online presence, enhance e-commerce capabilities, or streamline your web applications, I bring creativity, technical proficiency, and attention to detail to every project. I'm committed to delivering websites that not only meet but exceed your expectations, ensuring your brand stands out in the digital landscape.</p>
                             </div>
                         </div>
                     </div>
@@ -247,53 +229,18 @@ function App() {
                             <div className="icon">
                                 <BsFillChatDotsFill></BsFillChatDotsFill>
                             </div>
-                            <div className="feature-content">
-                                <h5>Make it Simple</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                            <div className="feature-content justify_content">
+                                <h5>Project Management</h5>
+                                <p>As an experienced software project manager, I offer a dynamic blend of leadership, technical expertise, and strategic thinking to drive your software projects to success. I specialize in orchestrating end-to-end project lifecycles, from initial concept to delivery and beyond.
+
+My services include meticulous project planning, resource allocation, risk management, and stakeholder communication to ensure projects stay on track and within budget. I excel in fostering collaboration among cross-functional teams, optimizing workflows, and ensuring that the software aligns perfectly with your business objectives.Let's work together to turn your software ideas into reality while mitigating risks and maximizing project outcomes.</p>
                             </div>
                         </div>
-                    </div>
-                  
-                    <div className="col-sm-6 col-lg-4 m-15px-tb">
-                        <div className="feature-box-1 box-shadow-lg">
-                            <div className="icon">
-                            <FaDesktop></FaDesktop>
-                            </div>
-                            <div className="feature-content">
-                                <h5>Responsiveness</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="col-sm-6 col-lg-4 m-15px-tb">
-                        <div className="feature-box-1 box-shadow-lg">
-                            <div className="icon">
-                            <ImPriceTag></ImPriceTag>
-                            </div>
-                            <div className="feature-content">
-                                <h5>Testing for Perfection</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="col-sm-6 col-lg-4 m-15px-tb">
-                        <div className="feature-box-1 box-shadow-lg">
-                            <div className="icon">
-                            <BsFillChatDotsFill></BsFillChatDotsFill>
-                            </div>
-                            <div className="feature-content">
-                                <h5>Advanced Options</h5>
-                                <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
+                    </div>       
                 </div>
             </div>
         </section>
-       
+
         <section id="work" className="section">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
@@ -382,6 +329,21 @@ function App() {
                         </div>
                     </div>
                 </div>
+                <div className="row sm-m-25px-b m-35px-b">
+                    <div className="col-md-12">
+                        <div className=" custom_pub">
+                            <div className="section-title custom_div">
+                            <h3 className="text-uppercase custom_pub">International Publication</h3>
+                            <p className="text-uppercase small">Paper's name : Eye Assistant ,Using mobile application to help the visually impaired</p>
+                            <p className="text-uppercase small">Publisher : IEEE </p>
+                            <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
+                
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -396,6 +358,7 @@ function App() {
                     </div>
                 </div>
                 </div>
+            
               
                 <div className="row justify-content-center">
                     <div className="col-lg-8 m-15px-tb">
@@ -501,7 +464,7 @@ function App() {
    
     <script src="static/js/custom.js"></script>
     <script src="static/js/mail_send.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </div>
     </>
     // <Container>
