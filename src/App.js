@@ -24,10 +24,9 @@ function App() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
                     <ul className="navbar-nav ml-auto">
                         <li><a className="nav-link active" href="#home">Home</a></li>
-                        <li><a className="nav-link" href="#about">About Us</a></li>
+                        <li><a className="nav-link" href="#about">About Me</a></li>
                         <li><a className="nav-link" href="#services">services</a></li>
                         <li><a className="nav-link" href="#work">Portfolio</a></li>
-                        <li><a className="nav-link" href="#blog">Blog</a></li>
                         <li><a className="nav-link" href="#contactus">Contact</a></li>
                     </ul>
                 </div>
@@ -56,7 +55,7 @@ function App() {
                 </a>
             </div>
         </section>
-        <section id="about" className="section gray-bg">
+        <section id="about" className="section gray-bg text-dark">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
@@ -122,7 +121,7 @@ function App() {
     
         <section className="section">
             <div className="container">
-                <div className="row sm-m-25px-b m-35px-b justify_content">
+                <div className="row sm-m-25px-b m-35px-b justify_content text-dark">
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">My Skills</h3>
@@ -187,7 +186,7 @@ function App() {
             </div>
         </section>
        
-        <section id="services" className="section gray-bg">
+        <section id="services" className="section gray-bg text-dark">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
@@ -242,13 +241,13 @@ My services include meticulous project planning, resource allocation, risk manag
             </div>
         </section>
 
-        <section id="work" className="section">
+        <section id="work" className="section text-dark">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">LATEST WORKS</h3>
-                            <p className="text-uppercase small">A Lead UX &amp; UI designer based in Canada</p>
+                            <p className="text-uppercase small">I'm happy to share my latest Salesforce and software projects</p>
                         </div>
                     </div>
                 </div>
@@ -258,13 +257,13 @@ My services include meticulous project planning, resource allocation, risk manag
             </div>
         </section>
        
-        <section className="section gray-bg">
+        <section className="section gray-bg text-dark justify_content">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">Achivements</h3>
-                            <p className="text-uppercase small">A Lead UX &amp; UI designer based in Canada</p>
+                            <p className="text-uppercase small">I'm excited to feature my achievements</p>
                         </div>
                     </div>
                 </div>
@@ -273,19 +272,17 @@ My services include meticulous project planning, resource allocation, risk manag
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/certificate.jpg" title="" alt=""/>
+                                    <img src="./img/admin.png" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
                                 <div className="b-meta">
-                                    <span className="date">02 Mar</span>
-                                    <span className="meta">Design</span>
+                                    <span className="date"> 10 june 2023</span>
+                                    <span className="meta">Issued By</span>
                                 </div>
-                                <h5><a href="#">Make your Marketing website</a></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div className="btn-grid">
-                                    <a className="m-btn-link" href="#">Read More</a>
-                                </div>
+                                <h5><a href="#">Salesforce</a></h5>
+                                <p>Salesforce Admin certification, I learned to effectively manage and configure Salesforce to optimize business processes and maximize productivity.</p>
+                              
                             </div>
                         </div>
                     </div>
@@ -293,19 +290,18 @@ My services include meticulous project planning, resource allocation, risk manag
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/certificate.jpg" title="" alt=""/>
+                                    <img src="./img/udemy.png" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
                                 <div className="b-meta">
-                                    <span className="date">02 Mar 2019</span>
-                                    <span className="meta">Design</span>
+                                    <span className="date">09 dec 2022</span>
+                                    <span className="meta">Issued By</span>
                                 </div>
-                                <h5><a href="#">Make your Marketing website</a></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div className="btn-grid">
-                                    <a className="m-btn-link" href="#">Read More</a>
-                                </div>
+                                <h5><a href="#">udemy</a></h5>
+                                <p>In my udemy Salesforce Admin certification course on Udemy by Francis Pindar, I learned comprehensive Salesforce administration skills.</p>
+                                
+                               
                             </div>
                         </div>
                     </div> 
@@ -313,23 +309,200 @@ My services include meticulous project planning, resource allocation, risk manag
                         <div className="blog-grid">
                             <div className="blog-grid-img">
                                 <a href="#">
-                                    <img src="./img/certificate.jpg" title="" alt=""/>
+                                    <img src="./img/inovi.png" title="" alt=""/>
                                 </a>
                             </div>
                             <div className="blog-gird-info">
                                 <div className="b-meta">
-                                    <span className="date">02 Mar 2019</span>
-                                    <span className="meta">Design</span>
+                                    <span className="date">01 dec 2022</span>
+                                    <span className="meta">Issued By</span>
                                 </div>
-                                <h5><a href="#">Make your Marketing website</a></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div className="btn-grid">
-                                    <a className="m-btn-link" href="#">Read More</a>
-                                </div>
+                                <h5><a href="#">Inovi solutions</a></h5>
+                                <p>i learned here fundamental of salesforce with experience project to obtain this certificate. it was grate hands on opportunity for me as a salesforce enthusiast</p>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div className="row">
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/ct.jpg" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date"> 07 dec 2016</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href=""></a>Creative it institute</h5>
+                                <p>This course covers modern web UI/UX design with HTML,CSS,JS, and Bootstrap.</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/acm.jpg" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">30 dec 2019</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">Noth South University ( ACM Chapter )</a></h5>
+                                <p>My team was first runner-up in my university capestope project showcase for making intelligent video surveillance with AI.</p>
+                                
+                               
+                            </div>
+                        </div>
+                    </div> 
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/cec.jpg" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">17 july 2016</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">Noth South University Computer and engineering club</a></h5>
+                                <p>Participating in a national-level programming contest that is organized by the NSU Computer and Engineering Club</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div className="row">
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/sqlbasic.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date"> 22 Mar 2023</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">HackerRank</a></h5>
+                                <p>HackerRank's basic SQL certificate equips learners with essential SQL skills, paving the way for database proficiency.</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/sqlintermediate.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">23 Mar 2023</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">HackerRank</a></h5>
+                                <p>   HackerRank's intermediate SQL certificate signifies advanced SQL expertise, showcasing your ability to tackle complex data challenges and optimize database queries effectively.</p>
+                                
+                             
+                            </div>
+                        </div>
+                    </div> 
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/sqladvance.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">24 Mar 2023</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">HackerRank</a></h5>
+                                <p>HackerRank's advanced SQL certificate certifies mastery in SQL, demonstrating proficiency in handling intricate database operations and optimizing queries for high-performance data management.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/css.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date"> 29 Sep 2023</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">HackerRank</a></h5>
+                                <p>The HackerRank CSS certificate validates  proficiency in Cascading Style Sheets (CSS), highlighting ability to create visually appealing and responsive web designs.</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/japanees.jpg" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">09 dec 2022</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">NSU department of english and modern languages</a></h5>
+                                <p>This is my intermediate-level Japanese proficiency certificate, where I learned Japanese letters, writing heragana and katagana, and speaking.</p>
+                                
+                               
+                            </div>
+                        </div>
+                    </div> 
+                    <div className="col-lg-4 m-15px-tb">
+                        <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/ielts.jpg" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">23 Mar 2023</span>
+                                    <span className="meta">Issued By</span>
+                                </div>
+                                <h5><a href="#">British Council</a></h5>
+                                <p>The IELTS (International English Language Testing System) exam is a globally recognized assessment that measures your English language proficiency, enabling you to pursue academic or career opportunities in English-speaking countries.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className=" custom_pub">
@@ -338,7 +511,22 @@ My services include meticulous project planning, resource allocation, risk manag
                             <p className="text-uppercase small">Paper's name : Eye Assistant ,Using mobile application to help the visually impaired</p>
                             <p className="text-uppercase small">Publisher : IEEE </p>
                             <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
-                
+                            <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/con.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">03 May 2019</span>
+                                    <span className="meta">Publisher</span>
+                                </div>
+                                <h5><a href="#">IEEE (Institute of Electrical and Electronics Engineers)</a></h5>
+                                <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+                                
+                            </div>
+                        </div>
                             </div>
                             
                 
@@ -352,13 +540,13 @@ My services include meticulous project planning, resource allocation, risk manag
                     <Clients></Clients>
         </section>
         
-        <section id="contactus" className="section gray-bg">
+        <section id="contactus" className="section gray-bg text-dark">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">Get in touch</h3>
-                            <p className="text-uppercase small">A Lead UX &amp; UI designer based in Canada</p>
+                            <p className="text-uppercase small">I am ready to help you out.</p>
                         </div>
                     </div>
                 </div>
@@ -410,8 +598,8 @@ My services include meticulous project planning, resource allocation, risk manag
                                 <i className="ti-location-pin"></i>
                             </div>
                             <div className="media-div">
-                                <h6 className="dark-color font-alt">Our Address</h6>
-                                <p>123 Stree New York City , United States Of America 750065.</p>
+                                <h6 className="dark-color font-alt">My Address</h6>
+                                <p>Dhaka, Bangladesh</p>
                             </div>
                         </div>
                         <div className="contact-info media box-shadow">
@@ -419,9 +607,9 @@ My services include meticulous project planning, resource allocation, risk manag
                                 <i className="ti-mobile"></i>
                             </div>
                             <div className="media-div">
-                                <h6 className="dark-color font-alt">Our Phone</h6>
-                                <p>Office: +004 44444 44444<br/>
-                                    Office: +004 44444 44444<br/></p>
+                                <h6 className="dark-color font-alt">My Phone</h6>
+                                <p>+880 1729 483512<br/>
+                                    <br/></p>
                             </div>
                         </div>
                         <div className="contact-info media box-shadow">
@@ -429,8 +617,8 @@ My services include meticulous project planning, resource allocation, risk manag
                                 <i className="ti-email"></i>
                             </div>
                             <div className="media-div">
-                                <h6 className="dark-color font-alt">Our Email</h6>
-                                <p>info@domainname.com<br/>contact@domainname.com</p>
+                                <h6 className="dark-color font-alt">My Email</h6>
+                                <p>Shahariarrashidfahim@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -443,15 +631,15 @@ My services include meticulous project planning, resource allocation, risk manag
             <div className="row align-items-center">
                 <div className="col-md-6 m-10px-tb">
                     <div className="nav justify-content-center justify-content-md-start">
-                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
-                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i className="fab fa-pinterest"></i></a>
+                        <a href="https://www.linkedin.com/in/shahariarrashidfahim/"><i className="fab fa-facebook-f"></i></a>
+                      
+                       
+                        <a href="https://www.linkedin.com/in/shahariarrashidfahim/"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Fahim1971"><i className="fab fa-git"></i></a>
                     </div>
                 </div>
                 <div className="col-md-6 m-10px-tb text-center text-md-right">
-                    <p>© 2019 copyright all right reserved</p>
+                    <p>©2023 copyright all right reserved for Shahariar Rashid Fahim</p>
                 </div>
             </div>
         </div>
@@ -470,20 +658,7 @@ My services include meticulous project planning, resource allocation, risk manag
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </div>
     </>
-    // <Container>
-    //   <Banner>
-    //     <Header />
-    //     <ProfComponent />
-    //   </Banner>
-    //   <Services />
-    //   <LightColor>
-    //     <Projects />
-    //   </LightColor>
-    //   <Clients />
-    //   <LightColor>
-    //     <Footer />
-    //   </LightColor>
-    // </Container>
+
   );
 }
 

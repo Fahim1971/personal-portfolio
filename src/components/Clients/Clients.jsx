@@ -11,23 +11,68 @@ let clients = [
         position : "Dev Lead",
         img_url : "/assets/al.jpg",
         stars : 5,
-        disc : `Md Amanat Khan Shishir is a highly skilled and experienced software engineer with a passion for building innovative solutions. He has a deep understanding of software development principles and practices, and he is always up-to-date on the latest technologies and trends.`
+        disc : `Shahariar is an exceptional Software Project Manager. His leadership skills, technical expertise, and commitment to success are truly commendable. Working with him has been a pleasure, and I highly recommend him for any project management role. Shahariar consistently delivers outstanding results.`
+    },
+  
+    {
+        name : "Santiago Llorach",
+        position : "Salesforce Administator",
+        img_url : "/assets/san.png",
+        stars : 5,
+        disc : `I am writing to recommend my workmate, Shahariar, who has been working with me as a Salesforce Administrator for Clear Fork Digital Consulting. Shahariar has been an invaluable member of our team, and I believe he would be an asset to any organization.
+        During his time at Clear Fork Digital Consulting, Shahariar has demonstrated exceptional skills in Salesforce administration. He has a deep understanding of the platform and is able to gather detailed requirements and provide full solution documentation for requirement delivery`
+    
+    
     },
     {
-        name : "Shahariar Rashid",
-        position : "Backend Engineer",
-        img_url : "/assets/default.jpg",
+        name : "Evan Oyster",
+        position : "Entrepreneur",
+       
+        img_url : "/assets/evan.png",
         stars : 5,
-        disc : `Amanat Khan is an outstanding software engineer with a proven track record of success. He is highly skilled in all aspects of software development, from design and implementation to testing and deployment. He is always eager to take on new challenges.
-
+        disc : `Shahariar is a passionate and skilled software developer and Salesforce Admin. His work is always to customer specifications, looks very clean, and he communicates very well!
         `
     },
     {
-        name : "Evan Oyester",
+        name : "Lynsie Ruzicka",
         position : "Salesforce Administator",
-        img_url : "/assets/default.jpg",
+        img_url : "/assets/lyn.png",
         stars : 5,
-        disc : `I have had the privilage to work with Mr. Amanat. He is veru enthusiastic and hard working. He is always eager to learn new things. He is also a master of his craft and is always up-to-date on the latest technologies and trends and also a great team player.`
+        disc : `I had the pleasure of working alongside Shahariar in a Salesforce project for Talent Stacker. He brings a blend of strategic vision and hands-on execution to the table. He is proficient with Experience Cloud and ahead of the curve when it comes to AI integration within Salesforce.
+
+        One of the aspects I most admire about Shahariar is his commitment to staying updated with the latest technological advancements. He is a joy to work with. His flexibility and friendly demeanor make collaborating with him not just productive but also enjoyable. 
+        
+        I recommend Shahariar for any project that requires expertise in Salesforce and project management.`
+    
+    
+    },
+    {
+        name : "Amanat Khan Shishir",
+        position : "Software engineer",
+        img_url : "/assets/a.png",
+        stars : 5,
+        disc : `I have been working with Mr. Rashid for more than two years. We have directly involved with three projects. He is very passionate and determined with his work. As a project manager, his strong communication skills made him an asset of our company. I am highly recommend him.`
+    
+    
+    },
+    {
+        name : "Mari johann",
+        position : "Salesforce Administator",
+        img_url : "/assets/m.png",
+        stars : 5,
+        disc : `I’ve had the good fortune to work with Shahariar on multiple Salesforce org and app builds for Clear Fork Digital Consulting and Talent Stacker. Shahariar is a talented developer, entrepreneur, project manager, and Salesforce Certified Administrator.
+        Shahariar approaches buildouts analytically and creatively, always customizing to the client’s specific requirements and acceptance criteria. On our builds, Shahariar has solutioned using the entire gamut of Salesforce functionality including: data migration, flow automations, data modeling including building custom apps, objects and fields with validation rules and record types and reports & dashboards. He has advanced knowledge of formulas and flows. Shahariar’s expertise in both programmatic and declarative development make him a well-rounded problem solver.`
+    
+    
+    },
+    {
+        name : "Md. Fahim Islam",
+        position : "Software Engineer @Shapla | Problem Solver | Mobile App Developer | Backend Developer",
+        img_url : "/assets/f.png",
+        stars : 5,
+        disc : `I highly recommend Shahariar Rashid Fahim as a software project manager. Fahim consistently demonstrated exceptional leadership, technical expertise, and strong communication skills throughout our project. His ability to plan, organize, and execute complex software projects while keeping the team motivated and focused was truly impressive. Fahim's dedication to delivering high-quality results on time and within budget is commendable, and he consistently went above and beyond to ensure the success of our projects. His collaborative and proactive approach makes him an asset to any team, and I have no doubt that he will excel in any role he takes on.`
+    
+    
     },
 ]
 var settings = {
