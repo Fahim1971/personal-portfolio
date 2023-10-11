@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
@@ -112,10 +112,12 @@ var settings = {
 
 const Clients = () => {
     const arrowRef = useRef(null);
+    const [seeMore, useSeeMore] = useState(false);
     let clientDisc = "";
     clientDisc = clients.map((item, i) => (
         <ClientSlider item={item} key={i}/>
     ))
+
   return (
     <Container id='client'>
             <h1 className='black'>Testimonials</h1>
@@ -124,10 +126,10 @@ const Clients = () => {
                 {clientDisc}
             </Slider>
             <Buttons>
-                <button
+                <button style={{color: '#d9832e'}}
                 onClick={() => arrowRef.current.slickPrev()}
                 ><IoIosArrowBack/></button>
-                <button
+                <button style={{color: '#d9832e'}}
                 onClick={() => arrowRef.current.slickNext()}
                 ><IoIosArrowForward/></button>
             </Buttons>
@@ -180,7 +182,7 @@ const Container = styled.div`
     }
     
     .slick-dots li.slick-active button{
-        background: #01be96;
+        background: #d9832e;
         width: 15px;
     }
 

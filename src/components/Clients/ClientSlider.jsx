@@ -1,10 +1,15 @@
-import React from 'react'
+import {React, useEffect, useState} from 'react'
 import styled from 'styled-components'
 import {IoIosQuote} from "react-icons/io";
 import {AiOutlineStar} from "react-icons/ai";
 
 const ClientSlider = (props) => {
     const {name, position, img_url, stars, disc} = props.item;
+    const [seeMore, setSeeMore] = useState(false);
+
+    const fullTestimonial = () => {
+        setSeeMore(!seeMore);
+    }
   return (
     <Container>
         <Header>
@@ -18,7 +23,12 @@ const ClientSlider = (props) => {
             </div>
         </Header>
         <Body>
-            {disc}
+            {seeMore === true ? disc : disc.slice(0,150)}
+            <p style={{
+                fontSize: '1rem',
+                fontWeight: '300',
+                color: '#d9832e',
+            }} onClick={fullTestimonial}>See more</p>
         </Body>
         <Footer>
             <img src={img_url} alt={name} />
