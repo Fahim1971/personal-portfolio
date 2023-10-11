@@ -23,7 +23,7 @@ const ClientSlider = (props) => {
             </div>
         </Header>
         <Body>
-            {seeMore === true ? disc : disc.slice(0,150)}
+            {seeMore === true ? disc : disc.slice(0,180)}
             <p style={{
                 fontSize: '1rem',
                 fontWeight: '300',

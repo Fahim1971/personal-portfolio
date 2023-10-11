@@ -6,6 +6,7 @@ import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
 import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
+import Certificates from "./certificates/Certificates";
 function App() {
   return (
     <>
@@ -186,7 +187,7 @@ function App() {
             </div>
         </section>
        
-        <section id="services" className="section gray-bg text-dark">
+        <section id="services" className="section gray-bg text-dark custom_space">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
@@ -257,7 +258,11 @@ My services include meticulous project planning, resource allocation, risk manag
             </div>
         </section>
        
+       
         <section className="section gray-bg text-dark justify_content">
+         
+             
+   
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
@@ -267,6 +272,8 @@ My services include meticulous project planning, resource allocation, risk manag
                         </div>
                     </div>
                 </div>
+                 
+
                 <div className="row">
                     <div className="col-lg-4 m-15px-tb">
                         <div className="blog-grid">
@@ -340,7 +347,7 @@ My services include meticulous project planning, resource allocation, risk manag
                                     <span className="meta">Issued By</span>
                                 </div>
                                 <h5><a href=""></a>Creative it institute</h5>
-                                <p>This course covers modern web UI/UX design with HTML,CSS,JS, and Bootstrap.</p>
+                                <p>professional responsive web design certificate. This course covers modern web UI/UX design with HTML,CSS,JS, and Bootstrap.</p>
                               
                             </div>
                         </div>
@@ -377,7 +384,7 @@ My services include meticulous project planning, resource allocation, risk manag
                                     <span className="meta">Issued By</span>
                                 </div>
                                 <h5><a href="#">Noth South University Computer and engineering club</a></h5>
-                                <p>Participating in a national-level programming contest that is organized by the NSU Computer and Engineering Club</p>
+                                <p>Participating in a national-level programming contest that is organized by the NSU Computer and Engineering Club.</p>
                                 
                             </div>
                         </div>
@@ -608,8 +615,8 @@ My services include meticulous project planning, resource allocation, risk manag
                             </div>
                             <div className="media-div">
                                 <h6 className="dark-color font-alt">My Phone</h6>
-                                <p>+880 1729 483512<br/>
-                                    <br/></p>
+                                <p>+880 1729 483512
+                                    </p>
                             </div>
                         </div>
                         <div className="contact-info media box-shadow">
@@ -639,7 +646,7 @@ My services include meticulous project planning, resource allocation, risk manag
                     </div>
                 </div>
                 <div className="col-md-6 m-10px-tb text-center text-md-right">
-                    <p>©2023 copyright all right reserved for Shahariar Rashid Fahim</p>
+                    <p>©2023 copyright reserved for Shahariar Rashid Fahim</p>
                 </div>
             </div>
         </div>

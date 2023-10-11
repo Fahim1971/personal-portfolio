@@ -18,6 +18,37 @@ let data = [
         link: "https://clearforkdc.com/"
     },
     {
+      name: "TS Salesforce project",
+      img : "/assets/dashboard.png",
+      disc : "Dashboard of salesforce project",
+    
+    },
+  {
+     name: "TS Salesforce project",
+     img : "/assets/schema.png",
+     disc : "schema diagram for my salesforce project",
+
+    },
+  
+    {
+      name: "TS Salesforce project",
+      img : "/assets/wr.png",
+      disc : "Lighting ",
+ 
+     },
+     {
+      name: "TS Salesforce project",
+      img : "/assets/app.png",
+      disc : "Lighting ",
+ 
+     },
+     {
+      name: "TS Salesforce project",
+      img : "/assets/email.png",
+      disc : "Lighting ",
+ 
+     },
+    {
         name: "Quickmed Patient App",
         img : "/assets/quickmed-patient.png",
         disc : "QuickMed, is a telemedicine platform, which offers online video consultation between patients and doctors drugs, diagnostics and e consultation in all over the world.",
