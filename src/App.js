@@ -496,7 +496,7 @@ My services include meticulous project planning, resource allocation, risk manag
                                     <span className="meta">Issued By</span>
                                 </div>
                                 <h5><a href="#">British Council</a></h5>
-                                <p>The IELTS (International English Language Testing System) exam is a globally recognized assessment that measures your English language proficiency, enabling you to pursue academic or career opportunities in English-speaking countries.</p>
+                                <p>The IELTS (International English Language Testing System) exam is a globally recognized assessment that measures  English language proficiency, enabling you to pursue academic or career opportunities in English-speaking countries.</p>
                                 
                             </div>
                         </div>
