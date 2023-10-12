@@ -3,7 +3,6 @@ import Slider from 'react-slick'
 import styled from 'styled-components'
 import ClientSlider from './ClientSlider';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { Slide } from 'react-awesome-reveal';
 
 let clients = [
     {
@@ -47,7 +46,7 @@ let clients = [
     
     },
     {
-        name : "Amanat Khan Shishir",
+        name : "Amanat Khan",
         position : "Software engineer",
         img_url : "/assets/a.png",
         stars : 5,
@@ -67,7 +66,7 @@ let clients = [
     },
     {
         name : "Md. Fahim Islam",
-        position : "Software Engineer @Shapla | Problem Solver | Mobile App Developer | Backend Developer",
+        position : "Software Engineer @Shapla",
         img_url : "/assets/f.png",
         stars : 5,
         disc : `I highly recommend Shahariar Rashid Fahim as a software project manager. Fahim consistently demonstrated exceptional leadership, technical expertise, and strong communication skills throughout our project. His ability to plan, organize, and execute complex software projects while keeping the team motivated and focused was truly impressive. Fahim's dedication to delivering high-quality results on time and within budget is commendable, and he consistently went above and beyond to ensure the success of our projects. His collaborative and proactive approach makes him an asset to any team, and I have no doubt that he will excel in any role he takes on.`
@@ -112,7 +111,6 @@ var settings = {
 
 const Clients = () => {
     const arrowRef = useRef(null);
-    const [seeMore, useSeeMore] = useState(false);
     let clientDisc = "";
     clientDisc = clients.map((item, i) => (
         <ClientSlider item={item} key={i}/>

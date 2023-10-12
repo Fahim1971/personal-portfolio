@@ -22,7 +22,7 @@ const Container = styled.div`
     height: 10rem;
     background-color: #4e5156;
     margin: 0 0.5rem;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
