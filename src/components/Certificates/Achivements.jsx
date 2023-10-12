@@ -79,6 +79,7 @@ const Achivements = () => {
                         </div>
                     </div>
                 </div>
+                <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
                     {clientDisc}
                 </Slider>
@@ -90,38 +91,10 @@ const Achivements = () => {
                     onClick={() => arrowRef.current.slickNext()}
                     ><IoIosArrowForward/></button>
                 </Buttons>
-                <div className="row sm-m-25px-b m-35px-b">
-                    <div className="col-md-12">
-                        <div className=" custom_pub">
-                            <div className="section-title custom_div">
-                            <h3 className="text-uppercase custom_pub">International Publication</h3>
-                            <p className="text-uppercase small">Paper's name : Eye Assistant ,Using mobile application to help the visually impaired</p>
-                            <p className="text-uppercase small">Publisher : IEEE </p>
-                            <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
-                            <div className="blog-grid">
-                            <div className="blog-grid-img">
-                                <a href="#">
-                                    <img src="./img/con.png" title="" alt=""/>
-                                </a>
-                            </div>
-                            <div className="blog-gird-info">
-                                <div className="b-meta">
-                                    <span className="date">03 May 2019</span>
-                                    <span className="meta">Publisher</span>
-                                </div>
-                                <h5><a href="#">IEEE (Institute of Electrical and Electronics Engineers)</a></h5>
-                                <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
-                                
-                            </div>
-                        </div>
-                            </div>
-                            
-                
-                        </div>
-                    </div>
-                </div>
+                </Testimonials>
             </div>
         </section>
+        
        </Container>
     ); 
 };

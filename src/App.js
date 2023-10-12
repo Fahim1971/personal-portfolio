@@ -6,6 +6,7 @@ import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
 import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
+import Certificates from "./certificates/Certificates";
 import Achivements from "./components/Certificates/Achivements";
 function App() {
   return (
@@ -187,7 +188,7 @@ function App() {
             </div>
         </section>
        
-        <section id="services" className="section gray-bg text-dark">
+        <section id="services" className="section gray-bg text-dark custom_space">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
@@ -258,15 +259,47 @@ My services include meticulous project planning, resource allocation, risk manag
             </div>
         </section>
        
-        
+       
 
-        <section className="section">
-                    <Clients></Clients>
-        </section>
+        
         <section className="section">
             <Achivements></Achivements>
         </section>
-        
+        <section className="section">
+        <Clients></Clients>
+        </section>
+        <section className="section container gray-bg text-dark justify_content">
+        <div className="row sm-m-25px-b m-35px-b">
+                    <div className="col-md-12">
+                        <div className=" custom_pub">
+                            <div className="section-title custom_div">
+                            <h3 className="text-uppercase custom_pub">International Publication</h3>
+                            <p className="text-uppercase small">Paper's name : Eye Assistant ,Using mobile application to help the visually impaired</p>
+                            <p className="text-uppercase small">Publisher : IEEE </p>
+                            <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
+                            <div className="blog-grid">
+                            <div className="blog-grid-img">
+                                <a href="#">
+                                    <img src="./img/con.png" title="" alt=""/>
+                                </a>
+                            </div>
+                            <div className="blog-gird-info">
+                                <div className="b-meta">
+                                    <span className="date">03 May 2019</span>
+                                    <span className="meta">Publisher</span>
+                                </div>
+                                <h5><a href="#">IEEE (Institute of Electrical and Electronics Engineers)</a></h5>
+                                <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+                                
+                            </div>
+                        </div>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+                </div>
+        </section>
         <section id="contactus" className="section gray-bg text-dark">
             <div className="container">
                 <div className="row sm-m-25px-b m-35px-b">
@@ -335,8 +368,8 @@ My services include meticulous project planning, resource allocation, risk manag
                             </div>
                             <div className="media-div">
                                 <h6 className="dark-color font-alt">My Phone</h6>
-                                <p>+880 1729 483512<br/>
-                                    <br/></p>
+                                <p>+880 1729 483512
+                                    </p>
                             </div>
                         </div>
                         <div className="contact-info media box-shadow">
@@ -351,6 +384,7 @@ My services include meticulous project planning, resource allocation, risk manag
                     </div>
                 </div>
         </section>
+        
     </main>
    
     <footer className="footer">
@@ -366,7 +400,7 @@ My services include meticulous project planning, resource allocation, risk manag
                     </div>
                 </div>
                 <div className="col-md-6 m-10px-tb text-center text-md-right">
-                    <p>©2023 copyright all right reserved for Shahariar Rashid Fahim</p>
+                    <p>©2023 copyright reserved for Shahariar Rashid Fahim</p>
                 </div>
             </div>
         </div>
