@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import {ImPriceTag} from 'react-icons/im';
 import {BsFillChatDotsFill} from 'react-icons/bs';
-import { Alert, ProgressBar } from "react-bootstrap";
+import {  ProgressBar } from "react-bootstrap";
 import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
-import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
-import Certificates from "./certificates/Certificates";
 import Achivements from "./components/Certificates/Achivements";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -314,7 +311,7 @@ My services include meticulous project planning, resource allocation, risk manag
                             <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
                             <div className="blog-grid">
                             <div className="blog-grid-img">
-                                <a href="#">
+                                <a href=" ">
                                     <img src="./img/con.png" title="" alt=""/>
                                 </a>
                             </div>
