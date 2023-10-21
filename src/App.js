@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {BsFillChatDotsFill} from 'react-icons/bs';
 import {  ProgressBar } from "react-bootstrap";
 import {FaDesktop, FaSalesforce} from 'react-icons/fa';
