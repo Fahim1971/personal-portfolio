@@ -8,7 +8,7 @@ const Certificate = ({item}) => {
         <div className="m-15px-tb">
         <div className="blog-grid">
         <div className="blog-grid-img">
-        <a href="#">
+        <a href=" ">
              <img src={item.img} title="" alt=""/>
         </a>
                                
@@ -18,7 +18,7 @@ const Certificate = ({item}) => {
                                     <span className="date"> {item.date}</span>
                                     <span className="meta">Issued By</span>
                                 </div>
-                                <h5><a href="#">{item.issued}</a></h5>
+                                <h5><a href=" ">{item.issued}</a></h5>
                                 <p>{item.description}</p>
                               
                             </div>
