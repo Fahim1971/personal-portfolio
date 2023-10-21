@@ -29,7 +29,7 @@ let clients = [
        
         img_url : "/assets/evan.png",
         stars : 5,
-        disc : `Shahariar is a passionate and skilled software developer and Salesforce Admin. His work is always to customer specifications, looks very clean, and he excellent communication and collaboration skills greatly facilitated our teamwork.
+        disc : `Shahariar is a passionate and skilled software developer and Salesforce Admin. His work is always to customer specifications, looks very clean, and he excellent communication and collaboration skills greatly facilitated our team.
         `
     },
     {
