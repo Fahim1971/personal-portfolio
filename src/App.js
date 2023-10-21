@@ -34,7 +34,7 @@ function App() {
         <nav className="navbar header-nav header-white navbar-expand-lg bg-dark bg-opacity-10">
             <div className="container">
               
-                <a className="navbar-brand" href="index-2.html">Shahariar Rashid fahim <span className="theme-bg"></span></a>
+                <a className="navbar-brand" href="/">Shahariar Rashid fahim <span className="theme-bg"></span></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
