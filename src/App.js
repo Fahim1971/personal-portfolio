@@ -1,14 +1,36 @@
 import styled from "styled-components";
 import {ImPriceTag} from 'react-icons/im';
 import {BsFillChatDotsFill} from 'react-icons/bs';
-import { ProgressBar } from "react-bootstrap";
+import { Alert, ProgressBar } from "react-bootstrap";
 import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
 import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
 import Certificates from "./certificates/Certificates";
 import Achivements from "./components/Certificates/Achivements";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useState } from "react";
 function App() {
+    const [alert, setAlert] = useState(0);
+    const form = useRef()
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_nydntnb', 'template_ta5onf2', form.current, '3Wiqaw-8KVC3m2aZu')
+          .then((result) => {
+              console.log(result.text);
+              setAlert(result.status)
+              if(result.status === 200){
+                setAlert(1)
+                window.alert("Message Sending Successful")
+
+              }
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+      console.log((alert))
   return (
     <>
     <div data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">
@@ -114,7 +136,7 @@ function App() {
                                 </div>
                             </div>
                             <div className="btn-bar">
-                                <a className="m-btn m-btn-theme" href="#work">Download CV</a>
+                                <a className="m-btn m-btn-theme" href="https://drive.google.com/file/d/1ZdxEy0M2AhOI4Wp5CVZWzyyTFYDWbbwJ/view?usp=share_link">Download Resume</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +149,7 @@ function App() {
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">My Skills</h3>
-                            <p className="text-uppercase small">A passionate Salesforce administrator and project manager</p>
+                            <p className="text-uppercase small">Evolving Services with a Passion for Learning and Innovation</p>
                         </div>
                     </div>
                 </div>
@@ -194,7 +216,7 @@ function App() {
                     <div className="col-md-12">
                         <div className="section-title">
                             <h3 className="dark-color text-uppercase">My Services</h3>
-                            <p className="text-uppercase small">A passionate Salesforce administrator and project manager</p>
+                            <p className="text-uppercase small">Crafting Seamless Online Experiences and Salesforce Solutions for Your Success.</p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +276,7 @@ My services include meticulous project planning, resource allocation, risk manag
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container custom_text">
                 <SliderComp></SliderComp>
             </div>
         </section>
@@ -262,14 +284,27 @@ My services include meticulous project planning, resource allocation, risk manag
        
 
         
-        <section className="section">
+        <section className="section gray-bg text-dark">
             <Achivements></Achivements>
         </section>
         <section className="section">
+        <div className="container text-dark">
+                <div className="row sm-m-25px-b m-35px-b">
+                    <div className="col-md-12">
+                        <div className="section-title">
+                            <h3 className="dark-color text-uppercase">Testimonial</h3>
+                            <p className="text-uppercase small">Few words from my colleagues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <Clients></Clients>
         </section>
-        <section className="section container gray-bg text-dark justify_content">
-        <div className="row sm-m-25px-b m-35px-b">
+
+
+        <section className="section gray-bg text-dark justify_content">
+            <div className="container">
+            <div className="row sm-m-25px-b m-35px-b">
                     <div className="col-md-12">
                         <div className=" custom_pub">
                             <div className="section-title custom_div">
@@ -283,15 +318,7 @@ My services include meticulous project planning, resource allocation, risk manag
                                     <img src="./img/con.png" title="" alt=""/>
                                 </a>
                             </div>
-                            <div className="blog-gird-info">
-                                <div className="b-meta">
-                                    <span className="date">03 May 2019</span>
-                                    <span className="meta">Publisher</span>
-                                </div>
-                                <h5><a href="#">IEEE (Institute of Electrical and Electronics Engineers)</a></h5>
-                                <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
-                                
-                            </div>
+                         
                         </div>
                             </div>
                             
@@ -299,6 +326,8 @@ My services include meticulous project planning, resource allocation, risk manag
                         </div>
                     </div>
                 </div>
+            </div>
+       
         </section>
         <section id="contactus" className="section gray-bg text-dark">
             <div className="container">
@@ -315,23 +344,23 @@ My services include meticulous project planning, resource allocation, risk manag
                     <div className="col-lg-8 m-15px-tb">
                         <div className="contact-form box-shadow">
                             <h4 className="dark-color font-alt m-20px-b">Say Something</h4>
-                            <form id="contact-form" method="POST">
+                            <form ref={form}  id="contact-form" method="POST">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <input name="Name" id="name" placeholder="Name *" className="form-control" type="text"/>
+                                            <input name="name" id="name" placeholder="Name *" className="form-control" type="text"/>
                                             <span className="input-focus-effect theme-bg"></span>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <input name="Email" id="email" placeholder="Email *" className="form-control" type="email"/>
+                                            <input name="email" id="email" placeholder="Email *" className="form-control" type="email"/>
                                             <span className="input-focus-effect theme-bg"></span>
                                         </div>
                                     </div>
                                     <div className="col-12">
                                         <div className="form-group">
-                                            <input name="Subject" id="subject" placeholder="Subject *" className="form-control" type="text"/>
+                                            <input name="subject" id="subject" placeholder="Subject *" className="form-control" type="text"/>
                                             <span className="input-focus-effect theme-bg"></span>
                                         </div>
                                     </div>
@@ -341,12 +370,14 @@ My services include meticulous project planning, resource allocation, risk manag
                                             <span className="input-focus-effect theme-bg"></span>
                                         </div>
                                     </div>
+                                    <div>
+                                    {alert === 1? <span id="suce_message" className="text-success" style={{display: "none"}}>Message Sending Successfull</span>:
+                                        <p id="err_message" className="text-danger" style={{display: "none"}}>Message Sending Failed</p>}
+                                    </div>
                                     <div className="col-md-12">
                                         <div className="send">
-                                            <button className="m-btn m-btn-theme" onclick="send_mail()" type="button" value="Send"> send message</button>
+                                            <button onClick={sendEmail} className="m-btn m-btn-theme"  type="submit" value="send"> send message</button>
                                         </div>
-                                        <span id="suce_message" className="text-success" style={{display: "none"}}>Message Sent Successfully</span>
-                                        <span id="err_message" className="text-danger" style={{display: "none"}}>Message Sending Failed</span>
                                     </div>
                                 </div>
                             </form>

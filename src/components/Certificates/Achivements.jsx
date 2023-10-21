@@ -8,23 +8,82 @@ const certificates = [
     {
         img: "./img/admin.png",
         date: "10 june 2023",
-        issued: "Salesforce"
+        issued: "Salesforce",
+        description: 'Administrator certification validates expertise in configuring and managing Salesforce environments to optimize business processes.',
     },
     {
         img: "./img/udemy.png",
         date: "09 dec 2022",
-        issued: "udemy"
+        issued: "udemy",
+        description: 'The Salesforce Udemy Admin Certification offers comprehensive training for becoming a skilled Salesforce administrator.',
     },
     {
         img: "./img/inovi.png",
-        date: "01 dec 2022",
-        issued: "Inovi solutions"
+        date: "01 nov 2022",
+        issued: "Inovi solutions",
+        description: 'In Inovi Solutions, I learned salesforce development and administration basics with a hands-on project for becoming a skilled professional.',
+
     },
     {
-        img: "./img/inovi.png",
-        date: "01 dec 2022",
-        issued: "Inovi solutions"
-    }
+        img: "./img/acm.jpg",
+        date: "01 dec 2019",
+        issued: "ACM",
+        description: 'In my final year university capstone, my team was the first runner-up to make an "intelligent video surveillance" project with AI.',
+    },
+    {
+        img: "./img/ct.jpg",
+        date: "07 dec 2016",
+        issued: "Creative IT Institute",
+        description: 'completed professional responsive web design, where I learned HTML, CSS, JS, and Bootstrap with hands-on projects in creative IT institute.',
+},
+{
+    img: "./img/cec.jpg",
+    date: "17 july 2016",
+    issued: "NSU CEC",
+    description: 'I participated in a national-level programming contest that was organized by the North South University Computer Engineering Club.',
+},
+{
+    img: "./img/css.png",
+    date: "29 sep 2023",
+    issued: "HackerRank",
+    description: 'CSS HackerRank certification confirms proficiency in Cascading Style Sheets, demonstrating competence in web design and development.',
+}
+,
+{
+    img: "./img/sqlbasic.png",
+    date: "22 mar 2023",
+    issued: "HackerRank",
+    description: 'SQL Basic HackerRank certification affirms fundamental skills in SQL, equipping learners with database querying and manipulation expertise.',
+}
+,
+{
+    img: "./img/sqlintermediate.png",
+    date: "23 mar 2023",
+    issued: "HackerRank",
+    description: 'SQL Intermediate HackerRank certification demonstrates proficiency in more advanced database queries, making you a skilled SQL practitioner.',
+}
+,
+{
+    img: "./img/sqladvance.png",
+    date: "24 mar 2023",
+    issued: "HackerRank",
+    description: 'SQL Advance HackerRank certification certifies expertise in complex database management and querying, showcasing advanced SQL skills.',
+}
+,
+{
+    img: "./img/japanese.jpg",
+    date: "27 may 2020",
+    issued: "Department of English and Modern language ( NSU )",
+    description: 'I love to learn Japanese as my third language. I learned Japanese letters and basic speaking in this course.',
+}
+,
+{
+    img: "./img/ielts.jpg",
+    date: "23 mar 2023",
+    issued: "British Council",
+    description: 'IELTS certification evaluates English language proficiency for academic purposes, recognized worldwide by educational institutions.',
+}
+
 ];
 var settings = {
     dots: true,
@@ -102,7 +161,7 @@ const Achivements = () => {
 export default Achivements;
 
 const Container = styled.div`
-    width: 80%;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 
@@ -140,6 +199,7 @@ const Container = styled.div`
         margin-top: 1rem;
         transition: all 400ms ease-in-out;
         border-radius: 50px;
+        font-weight: bold;
     }
     
     .slick-dots li.slick-active button{
@@ -168,6 +228,7 @@ const Buttons = styled.div`
         color: #01be96;
         cursor: pointer;
         font-size: 1.1rem;
+        font-weight: 800px;
     }
 
     @media(max-width:530px){

@@ -5476,10 +5476,11 @@ h6 {
 ------------------*/
 .blog-grid .blog-gird-info {
   background: #ffffff;
-  margin: -4px 10px 0;
+  margin: 6px 10px 0px 0px;
   position: relative;
   padding: 18px;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.19); }
+  width: 350px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
   .blog-grid .blog-gird-info .date {
     background: #d9832e;
     font-size: 12px;
@@ -5781,4 +5782,12 @@ h1 {
 	.content-wrapper {
 		width: 100%;
 	}
+}
+
+
+.custom_grid{
+  width: 700px;
+}
+.custom_text{
+  color: #fff;
 }

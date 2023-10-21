@@ -19,7 +19,7 @@ const Certificate = ({item}) => {
                                     <span className="meta">Issued By</span>
                                 </div>
                                 <h5><a href="#">{item.issued}</a></h5>
-                                <p>Salesforce Admin certification, I learned to effectively manage and configure Salesforce to optimize business processes and maximize productivity.</p>
+                                <p>{item.description}</p>
                               
                             </div>
                         </div>             
@@ -31,11 +31,11 @@ export default Certificate;
 
 
 const Container = styled.div`
-width: 80%;
+width: 100%;
 
 img{
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 240px;
     object-fit: cover;
 }
 
