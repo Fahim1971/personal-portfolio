@@ -8,7 +8,61 @@ import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
 import Certificates from "./certificates/Certificates";
 import Achivements from "./components/Certificates/Achivements";
+import { useState } from "react";
+import { Fragment } from "react";
+
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import CloseIcon from '@mui/icons-material/Close';
+import { Link } from "@mui/material";
+// import InboxIcon from '@mui/icons-material/MoveToInbox';
+// import MailIcon from '@mui/icons-material/Mail';
 function App() {
+    const [click, setClick] = useState(false);
+
+    const [state, setState] = useState({
+        left: false,
+      });
+
+      const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+          return;
+        }
+    
+        setState({ ...state, [anchor]: open });
+      };
+    
+      const list = (anchor) => (
+        <Box
+          sx={{ height: '100%', width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200, backgroundColor:"#343a40"}}
+          role="presentation"
+          onClick={toggleDrawer(anchor, false)}
+          onKeyDown={toggleDrawer(anchor, false)}
+        >
+        <CloseIcon sx={{marginLeft:'10px', marginTop:"5px", color:'white'}} onClick={toggleDrawer('left', false)}></CloseIcon>
+          <List>
+            {['Home', 'About Me', 'Services', 'Portfolio','Contact'].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                    <Link sx={{textDecoration: 'none', color:'white'}} href={text === 'About Me'?"#about": text==="Services"? "#services":text==="Portfolio"?"#work":text==="Contact"?"#contactus":"/"} > <ListItemText primary={text} /></Link>
+                </ListItemButton>
+              </ListItem>
+
+            ))}
+          </List>
+        </Box>
+      );
+
+    const handleNavbar=()=>{
+        setClick(!click);
+    }
   return (
     <>
     <div data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">
@@ -16,12 +70,23 @@ function App() {
         <nav className="navbar header-nav header-white navbar-expand-lg bg-dark bg-opacity-10">
             <div className="container">
               
-                <a className="navbar-brand" href="index-2.html">Shahariar Rashid fahim <span className="theme-bg"></span></a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <a className="navbar-brand" href="/">Shahariar Rashid fahim <span className="theme-bg"></span></a>
+                <div>
+                        {['left'].map((anchor) => (
+                            <Fragment key={anchor}>
+                            <Button className="navbar-toggler" onClick={toggleDrawer(anchor, true)}> </Button>
+                            <Drawer
+                                variant="temporary"
+                                anchor={anchor}
+                                open={state[anchor]}
+                                onClose={toggleDrawer(anchor, false)}
+                                style={{color:"black"}}
+                            >
+                                {list(anchor)}
+                            </Drawer>
+                            </Fragment>
+                        ))}
+                </div>
              
                 <div className="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
                     <ul className="navbar-nav ml-auto">
