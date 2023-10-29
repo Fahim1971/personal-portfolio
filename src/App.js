@@ -53,6 +53,7 @@ function App() {
              
             </div>
         </nav> 
+        
     </header>
   
     <main>
@@ -433,10 +434,10 @@ My services include meticulous project planning, resource allocation, risk manag
         </div>
     </footer>
    
-    <script src="static/js/jquery-3.2.1.min.js"></script>
+    {/* <script src="static/js/jquery-3.2.1.min.js"></script>
     <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
   
-    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <script src="static/plugin/appear/jquery.appear.js"></script> */}
    
     <script src="static/plugin/bootstrap/js/popper.min.js"></script>
     <script src="static/plugin/bootstrap/js/bootstrap.js"></script>
