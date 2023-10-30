@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef} from 'react'
 import Certificate from "./Certificate";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";

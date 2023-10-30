@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import {React, useState} from 'react'
 import styled from 'styled-components'
 import {IoIosQuote} from "react-icons/io";
 import {AiOutlineStar} from "react-icons/ai";

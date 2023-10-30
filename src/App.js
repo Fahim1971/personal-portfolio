@@ -1,12 +1,8 @@
-import styled from "styled-components";
-import {ImPriceTag} from 'react-icons/im';
 import {BsFillChatDotsFill} from 'react-icons/bs';
-import { Alert, ProgressBar } from "react-bootstrap";
+import {  ProgressBar } from "react-bootstrap";
 import {FaDesktop, FaSalesforce} from 'react-icons/fa';
 import SliderComp from "./components/Projects/Slider";
-import SliderCertificates from "./certificates/SliderCertificates";
 import Clients from "./components/Clients/Clients";
-import Certificates from "./certificates/Certificates";
 import Achivements from "./components/Certificates/Achivements";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -38,7 +34,7 @@ function App() {
         <nav className="navbar header-nav header-white navbar-expand-lg bg-dark bg-opacity-10">
             <div className="container">
               
-                <a className="navbar-brand" href="index-2.html">Shahariar Rashid fahim <span className="theme-bg"></span></a>
+                <a className="navbar-brand" href="/">Shahariar Rashid fahim <span className="theme-bg"></span></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -57,6 +53,7 @@ function App() {
              
             </div>
         </nav> 
+        
     </header>
   
     <main>
@@ -314,7 +311,7 @@ My services include meticulous project planning, resource allocation, risk manag
                             <a className="" href="https://ieeexplore.ieee.org/document/8934448?fbclid=IwAR3by8CvZyO0ClTIole21AwXm1R42yFkCE2gd3BRIAjdOWzzD0Mm2tRBlgE">website link</a>
                             <div className="blog-grid">
                             <div className="blog-grid-img">
-                                <a href="#">
+                                <a href=" ">
                                     <img src="./img/con.png" title="" alt=""/>
                                 </a>
                             </div>
@@ -437,10 +434,10 @@ My services include meticulous project planning, resource allocation, risk manag
         </div>
     </footer>
    
-    <script src="static/js/jquery-3.2.1.min.js"></script>
+    {/* <script src="static/js/jquery-3.2.1.min.js"></script>
     <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
   
-    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <script src="static/plugin/appear/jquery.appear.js"></script> */}
    
     <script src="static/plugin/bootstrap/js/popper.min.js"></script>
     <script src="static/plugin/bootstrap/js/bootstrap.js"></script>
@@ -455,17 +452,3 @@ My services include meticulous project planning, resource allocation, risk manag
 }
 
 export default App;
-
-const Container = styled.div``;
-const Banner = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-  height: 80vh;
-  @media (max-width: 640px) {
-    height: 100%;
-    padding-bottom: 2rem;
-  }
-`;
-
-const LightColor = styled.div`
-  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-`;
